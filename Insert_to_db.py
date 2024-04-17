@@ -14,28 +14,26 @@ class Database:
         self.heading = Label(master, text='Add to the database',font=('arial 40 bold'), fg='steelblue')
         self.heading.place(x=400, y=0)
 
-        self.l= Label(master, text="ID has reached upto: " + str(id), font=('arial 18 bold'))
-        self.l.place(x=0, y=40)
         self.name_l = Label(master, text="Enter Product Name",font=('arial 18 bold'))
-        self.name_l.place(x=0, y=70)
+        self.name_l.place(x=10, y=70)
 
         self.stock_l = Label(master, text="Enter Stocks",font=('arial 18 bold'))
-        self.stock_l.place(x=0, y=120)
+        self.stock_l.place(x=10, y=120)
 
         self.cp_l = Label(master, text="Enter Cost Price",font=('arial 18 bold'))
-        self.cp_l.place(x=0, y=170)
+        self.cp_l.place(x=10, y=170)
 
         self.sp_l = Label(master, text="Enter Selling Price",font=('arial 18 bold'))
-        self.sp_l.place(x=0, y=220)
+        self.sp_l.place(x=10, y=220)
 
         self.vendor_l = Label(master, text="Enter Vendor Name",font=('arial 18 bold'))
-        self.vendor_l.place(x=0, y=270)
+        self.vendor_l.place(x=10, y=270)
 
         self.vendor_phone_l = Label(master, text="Enter Vendor Phone Number",font=('arial 18 bold'))
-        self.vendor_phone_l.place(x=0, y=320)
+        self.vendor_phone_l.place(x=10, y=320)
 
         self.id_l = Label(master, text="Enter ID",font=('arial 18 bold'))
-        self.id_l.place(x= 0, y=370)
+        self.id_l.place(x=10, y=370)
         # Entries for the labels
 
         self.name_g = Entry(master, width=25,font=('arial 18 bold'))
@@ -106,6 +104,8 @@ class Database:
         self.vendor_g.delete(0, END)
         self.vendor_phone_g.delete(0, END)
         self.id_g.delete(0, END)
+
+
         
 root = Tk()
 
